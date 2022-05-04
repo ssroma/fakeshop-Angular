@@ -1,0 +1,30 @@
+<div class="ui grid container">
+  <div class="ui placeholder segment">
+    <div class="ui two column stackable center aligned grid">
+      <div class="ui vertical divider">AND</div>
+      <div class="middle aligned row">
+        <div class="column lp">
+          <img
+            class="ui fluid image"
+            [src]="product?.image"
+            [alt]="product?.title"
+          />
+        </div>
+        <div class="column rp">
+          <h1>{{ product?.title }}</h1>
+          <h2>
+            <a href="#" class="ui teal tag label"> ${{ product?.price }} </a>
+          </h2>
+          <h3 class="ui brown block header">{{ product?.category }}</h3>
+          <p>{{ product?.description }}</p>
+          <div class="ui vertical animated button" tabIndex="0">
+            <div class="hidden content">
+              <i class="shop icon"></i>
+            </div>
+            <div class="visible content">Add to Cart</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
